@@ -54,7 +54,14 @@ import { Component, OnInit } from "@angular/core";
             </tr>
           </tbody>
         </table>
+        <div
+          class="text-center d-flex justify-content-center"
+          *ngIf="centersData?.length === 0"
+        >
+          <p>No Data Avaliable for Current Pincode</p>
+        </div>
         <ngb-pagination
+          *ngIf="centersData?.length > 10"
           [(page)]="paginationObj.page"
           [pageSize]="paginationObj.pageSize"
           [collectionSize]="centersData?.length"
@@ -66,14 +73,14 @@ import { Component, OnInit } from "@angular/core";
       <div class="card-footer d-flex justify-content-center">
         <button
           type="button"
-          class="btn btn-primary btn-lg"
+          class="btn btn-primary btn-sm"
           (click)="backToLogin()"
         >
           <i class="fa fa-arrow-circle-left"></i> Back
         </button>
         <button
           type="button"
-          class="btn btn-info ml-2 btn-lg"
+          class="btn btn-info ml-2 btn-sm"
           (click)="getData()"
         >
           <i class="fa fa-repeat" [ngClass]="{ 'fa-spin': dataLoaded }"></i>

@@ -26,8 +26,7 @@ import { Router } from "@angular/router";
           <div class="d-flex justify-content-center">
             <img
               src="assets/images/logo.png"
-              class="img-fluid"
-              height="80px"
+              height="100px"
               alt="logo"
             />
           </div>

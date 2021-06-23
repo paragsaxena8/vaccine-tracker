@@ -4,7 +4,9 @@
   "scripts": {
     "ng": "ng",
     "start": "ng serve",
-    "build": "ng build"
+    "build": "ng build --prod --base-href https://paragsaxena8.github.io/vaccine-tracker/",
+    "gh": "ngh -no-silent",
+    "gh:build": "npm run build && npm run gh"
   },
   "private": true,
   "dependencies": {

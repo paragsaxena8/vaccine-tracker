@@ -6,8 +6,8 @@ import { Router } from "@angular/router";
 @Component({
   selector: "app-login",
   template: `
-    <div class="d-flex">
-      <div class="col-sm-7 pl-0">
+    <div class="d-lg-flex">
+      <div class="col-lg-7 col-sm-12 px-0">
         <div class="bg-banner text-white vh-100 p-4">
           <h2>Vaccine Tracker</h2>
           <p class="w-50">
@@ -16,17 +16,17 @@ import { Router } from "@angular/router";
           </p>
         </div>
       </div>
-      <div class="col-sm-5 vh-100">
+      <div class="col-lg-5 col-sm-12 vh-100">
         <form
           class="form"
           #login="ngForm"
           (ngSubmit)="submit(login)"
           ngNativeValidate
         >
-          <div class="d-flex justify-content-end">
+          <div class="d-flex justify-content-center">
             <img
               src="assets/images/logo.png"
-              class="img"
+              class="img-fluid"
               height="80px"
               alt="logo"
             />

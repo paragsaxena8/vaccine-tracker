@@ -1,1 +1,49 @@
 /* You can add global styles to this file, and also import other style files */
+
+/* Importing Bootstrap SCSS file. */
+@import "~bootstrap/scss/bootstrap";
+@import "~font-awesome/scss/font-awesome";
+
+
+.form-control {
+  background-color: #f3f6f9;
+  border-color: #f3f6f9;
+  color: #3f4254;
+  transition: color 0.15s ease, background-color 0.15s ease,
+    border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.bg-banner {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url(assets/images/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.form {
+  box-shadow: 0 5px 30px -10px #0000001a;
+  padding: 35px 50px;
+  border-radius: 20px;
+  position: relative;
+}
+
+.table{
+  th{
+    padding: 5px 13px;
+    background-color: #007;
+    color: #fff;
+  }
+  td{
+    padding: 5px 13px;
+  }
+}
+
+.page-link {
+  @extend .btn;
+  @extend .btn-sm;
+  @extend .btn-light;
+  @extend .btn-info;
+  @extend .mr-2;
+  @extend .my-1;
+}
+
